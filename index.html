@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Corizen</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1f4d3a">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="top-header">
+    <div class="brand">
+      <img src="assets/images/logo.png" alt="Corizen">
+      <span>Corizen</span>
+    </div>
+
+    <div class="header-icons">
+      <a href="profile.html">Profile</a>
+      <a href="cart.html">Cart</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>
+      Curating your<br>
+      <span>study needs & notes.</span>
+    </h1>
+
+    <input type="text" placeholder="Search notes & stationery..." disabled>
+  </section>
+
+  <!-- NOTES SECTION -->
+  <section class="card-section">
+    <h2>Class 9–12 Notes</h2>
+
+    <div class="subjects">
+      <div onclick="goNotes()">Mathematics</div>
+      <div onclick="goNotes()">Science</div>
+      <div onclick="goNotes()">Social Science</div>
+      <div onclick="goNotes()">English</div>
+      <div onclick="goNotes()">Hindi</div>
+    </div>
+
+    <button class="primary-btn" onclick="goNotes()">
+      View All Notes
+    </button>
+  </section>
+
+  <!-- SHOP -->
+  <section class="card-section">
+    <h2>Stationery & Books</h2>
+
+    <div class="product-card">
+      <div class="product-info">
+        <h3>Notebook</h3>
+        <p>Books</p>
+      </div>
+      <strong>₹99</strong>
+      <button onclick="addToCart(1)">Add</button>
+    </div>
+
+    <div class="product-card">
+      <div class="product-info">
+        <h3>Blue Gel Pens</h3>
+        <p>Pens</p>
+      </div>
+      <strong>₹149</strong>
+      <button onclick="addToCart(2)">Add</button>
+    </div>
+
+    <button class="secondary-btn" onclick="location.href='cart.html'">
+      Shop All
+    </button>
+  </section>
+
+  <!-- BOTTOM NAV -->
+  <nav class="bottom-nav">
+    <a class="active">Home</a>
+    <a href="notes.html">Notes</a>
+    <a href="profile.html">Profile</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+
+  <!-- JS -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/app.js"></script>
+
+</body>
+</html>
