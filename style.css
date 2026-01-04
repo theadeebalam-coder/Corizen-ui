@@ -1,0 +1,201 @@
+/* ======================
+   GLOBAL RESET
+====================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f6f8f5;
+  color: #1f1f1f;
+  padding-bottom: 90px;
+}
+
+/* ======================
+   HEADER
+====================== */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background: #ffffff;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.brand img {
+  width: 36px;
+  height: 36px;
+}
+
+.brand span {
+  font-size: 18px;
+}
+
+.header-icons a {
+  margin-left: 14px;
+  text-decoration: none;
+  color: #1f4d3a;
+  font-weight: 500;
+}
+
+/* ======================
+   HERO
+====================== */
+.hero {
+  padding: 28px 18px;
+  background: linear-gradient(135deg, #e6efe8, #f6f8f5);
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.hero h1 span {
+  color: #1f4d3a;
+}
+
+.hero input {
+  margin-top: 18px;
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: none;
+  background: #ffffff;
+  font-size: 14px;
+}
+
+/* ======================
+   SECTIONS
+====================== */
+.card-section {
+  padding: 22px 18px;
+}
+
+.card-section h2 {
+  font-size: 18px;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+/* ======================
+   SUBJECTS
+====================== */
+.subjects {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  margin-bottom: 16px;
+}
+
+.subjects div {
+  min-width: 120px;
+  padding: 14px;
+  border-radius: 18px;
+  background: #ffffff;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+  cursor: pointer;
+}
+
+/* ======================
+   BUTTONS
+====================== */
+.primary-btn {
+  width: 100%;
+  padding: 14px;
+  background: #1f4d3a;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  width: 100%;
+  padding: 14px;
+  background: #e6efe8;
+  color: #1f4d3a;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ======================
+   PRODUCTS
+====================== */
+.product-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 16px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+}
+
+.product-info h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.product-info p {
+  font-size: 13px;
+  color: #666;
+}
+
+.product-card button {
+  padding: 8px 14px;
+  border-radius: 14px;
+  border: none;
+  background: #1f4d3a;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ======================
+   BOTTOM NAV
+====================== */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #1f4d3a;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: #cfe3d8;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.bottom-nav a.active {
+  color: #ffffff;
+  font-weight: 600;
+}
